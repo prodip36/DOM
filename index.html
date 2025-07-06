@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js with dom</title>
+</head>
+<body>
+    <h1 id="demo">Learning Dom.</h1>
+    <h2 class="h2o">H2O</h2>
+    <h3 class="h3">It is h3.</h3>
+    <p id="dom-vai" style="background-color: antiquewhite;">hello dom vai, apnar kache ki match ase?</p>
+    <script>
+        document.getElementById("demo").innerHTML="Taratari Dom sikho vai!";
+        document.getElementById("demo").innerHTML="Arreh vai!";
+        document.getElementById("dom-vai").innerHTML="Ha vai";
+        document.getElementById("demo").innerText="oreeh vai";
+        const text= document.getElementsByTagName("h2").innerText;
+        console.log(text);
+    </script>
+</body>
+</html>
