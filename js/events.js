@@ -10,3 +10,10 @@ function make_blue(){
     document.body.style.backgroundColor='blue';
 }
 
+// make purple section
+const makePurpleButton=document.getElementById("make-purple");
+// console.log(makePurpleButton);
+makePurpleButton.onclick= function make_purple(){
+    document.body.style.backgroundColor='purple';
+}
+
