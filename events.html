@@ -7,7 +7,19 @@
 </head>
 <body>
     <h1 onclick="console.log('special event')">Special events for DOM!</h1>
-    <script src="./js/events.js"></script>
+   
     <button onclick="console.log('Clicked!')">click me</button>
+    <br>
+    <br>
+    <!-- on button click js -->
+    <button onclick="document.body.style.backgroundColor='yellow'">make yellow</button> <button onclick="document.body.style.backgroundColor='white'">reset background</button>
+    <br> <br>
+    <!-- by func cal js -->
+     <button onclick="make_red()">Make Red</button>
+     <br>
+     <br>
+     <button id="make-blue">Make Blue</button>
+    <script src="./js/events.js"></script>
+  
 </body>
 </html>
