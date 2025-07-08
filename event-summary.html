@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event summary</title>
+</head>
+<body>
+    <h2>Event</h2>
+    <h2 id="event-handler">Default Text.</h2>
+    <button onclick="handleOnClick()">Handle Event by add onclick function</button>
+    <button id="event-listener">Handle by addEventListener</button>
+    <script>
+        function handleOnClick(){
+            console.log("button clicked");
+            const handlerStatus=document.getElementById('event-handler');
+            handlerStatus.innerText='Handle by a function attached on onclick button.';
+        }
+        document.getElementById('event-listener').addEventListener('click',function(){
+            const eventListener=document.getElementById('event-handler');
+            eventListener.innerText='Text updated by add event listener button.'
+        })
+    </script>
+</body>
+</html>
