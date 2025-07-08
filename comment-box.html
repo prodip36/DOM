@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new comment</title>
+</head>
+<body>
+    <h1>Please add new comment</h1>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus vitae quae perspiciatis sequi, aspernatur ab. Doloribus aliquam laborum quasi. Laboriosam necessitatibus incidunt quidem eaque assumenda minus molestias dignissimos minima voluptas?</p>
+        <p>Esse ipsa corporis distinctio explicabo? Omnis, earum! Itaque amet delectus, quam deleniti officia veniam atque. Neque numquam eius et est deleniti, consectetur voluptates voluptate veniam nihil beatae repudiandae molestias vero?</p>
+        <p>Voluptate expedita aperiam aliquam molestias eius est quo, at tenetur excepturi! Natus magni iste molestiae nulla eaque. Quas, quod! Et expedita ex laudantium fugit architecto obcaecati natus dolorem, quam quas.</p>
+        <p>Nesciunt consequatur sit est exercitationem, reprehenderit debitis facilis repellat molestias ipsam? Facere animi asperiores saepe iure! Reiciendis mollitia harum unde inventore quia voluptatibus numquam quisquam accusamus ipsa facilis, quos est?</p>
+    </div>
+
+    <div>
+        <!-- <textarea name="" placeholder="comment here" id=""></textarea> -->
+         <textarea name="" id="text-area-input" cols="50" rows="5" placeholder="Comment here"></textarea>
+         <br>
+         <button id="btn-comment">Comment</button>
+    </div>
+    <script>
+        document.getElementById('btn-comment').addEventListener('click',function(){
+            console.log("clicked");
+            const tempInput=document.getElementById('text-area-input');
+            const tmp=tempInput.value;
+
+            const commentContainer=document.getElementById('comment-container');
+            const p=document.createElement('p');
+            p.innerText=tmp;
+
+            commentContainer.appendChild(p);
+            tempInput.value='';
+            
+        })
+    </script>
+</body>
+</html>
